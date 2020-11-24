@@ -1,4 +1,6 @@
 function bgChanger() {
+    let hext = document.querySelector('.hexText')
+
     function getRandomInt(max) {
         return Math.floor(Math.random() * Math.floor(max));
     }
@@ -8,4 +10,5 @@ function bgChanger() {
         result += hex[getRandomInt(hex.length)];
     }
     document.body.style.background = result;
+    hext.innerText = result;
 }
